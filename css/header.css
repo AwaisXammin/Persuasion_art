@@ -2,3 +2,15 @@
   color: aqua;
   font-size: 50px;
 }
+
+header {
+  padding: 15px 0;
+}
+header nav .navbar-brand img {
+  width: 200px;
+}
+header nav .collapse.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}

@@ -1,4 +1,165 @@
-.paragraph {
-  color: aqua;
-  font-size: 50px;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-primary:focus {
+  box-shadow: none !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*### Colors ###*/
+/*--### Font Family ###--*/
+.container-fluid {
+  padding: 0 6%;
+}
+
+section {
+  padding: 3% 0;
+}
+
+/*### Header-section ###*/
+header {
+  padding: 15px 0;
+  /*### Navbar ###*/
+}
+header nav {
+  /*### Logo ###*/
+  /*### Menu ###*/
+}
+header nav .navbar-brand img {
+  width: 200px;
+}
+header nav .collapse.navbar-collapse {
+  justify-content: end;
+}
+header nav .collapse.navbar-collapse ul li a {
+  font-family: "Poppins", sans-serif;
+  margin-right: 40px;
+}
+header nav .collapse.navbar-collapse ul li .menu-btn {
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 12px 35px;
+  color: white;
+  border-color: white;
+}
+header nav .collapse.navbar-collapse ul li .menu-btn:hover {
+  background-color: white;
+  color: #805b85;
+}
+
+/*### Header & Banner-Section ###*/
+.header-bg {
+  background-image: linear-gradient(to right, white 40%, #805b85 0%);
+}
+
+/*### Banner-Section ###*/
+.banner-section .container-fluid .row {
+  /*### Left-Column ###*/
+  /*### Right-Column ###*/
+}
+.banner-section .container-fluid .row .left-column .img img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+.banner-section .container-fluid .row .right-column {
+  margin-top: 85px;
+}
+.banner-section .container-fluid .row .right-column .content h1 {
+  color: white;
+  font-family: ubuntu;
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.banner-section .container-fluid .row .right-column .content h4 {
+  color: white;
+  font-size: 24px;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/*### Section-Header ###*/
+.section-header .container-fluid {
+  /*### Row ###*/
+}
+.section-header .container-fluid .row {
+  background: #805b85;
+  padding: 0px 37px 60px 37px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 28px;
+  box-shadow: 0px 0px 21px 7px rgba(128, 91, 131, 0.631372549);
+}
+.section-header .container-fluid .row .content {
+  /*### Number ###*/
+  /*### Content ###*/
+}
+.section-header .container-fluid .row .content .number h1 {
+  font-size: 138px;
+  color: white;
+}
+.section-header .container-fluid .row .content .headings {
+  margin-top: -100px;
+  text-align: center;
+}
+.section-header .container-fluid .row .content .headings h3 {
+  font-size: 28px;
+  color: white;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.section-header .container-fluid .row .content .headings h1 {
+  font-size: 72px;
+  color: white;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
