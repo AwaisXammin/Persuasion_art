@@ -14,29 +14,15 @@ header {
     .collapse.navbar-collapse {
       justify-content: end;
       ul {
+        align-items: center;
         li {
           a {
             font-family: $body-font;
             margin-right: 40px;
-          }
-          .menu-btn {
-            border: 2px solid;
-            border-radius: 50px;
-            padding: 12px 35px;
-            color: $white;
-            border-color: $white;
-            &:hover {
-              background-color: $white;
-              color: $primary;
-            }
+            color: $black !important;
           }
         }
       }
     }
   }
-}
-
-/*### Header & Banner-Section ###*/
-.header-bg {
-  background-image: linear-gradient(to right, white 40%, #805b85 0%);
 }

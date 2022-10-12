@@ -59,7 +59,98 @@ ul {
 }
 
 section {
-  padding: 3% 0;
+  padding: 5% 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.button {
+  display: flex;
+  width: 210px;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 0px;
+  font-weight: 700;
+  border-radius: 12px;
+  font-size: 17px;
+  transition: all 0.5s;
+}
+
+.button-light {
+  background: white;
+  color: black;
+  border: 1px solid white;
+}
+.button-light:hover {
+  color: #805b85;
+  background-color: transparent;
+  border-color: #805b85;
+  transition: all 0.3s;
+}
+.button-light:hover i::before {
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.button-light i {
+  transition: all 0.3s;
+}
+.button-light i::before {
+  margin-left: 5px;
+}
+
+.button-dark {
+  background: #805b85;
+  color: white;
+  border: 1px solid #805b85;
+  box-shadow: 0px 0px 26px 3px rgba(128, 91, 132, 0.4901960784);
+}
+.button-dark:hover {
+  color: #805b85;
+  background-color: transparent;
+  border-color: #805b85;
+  transition: all 0.3s;
+  box-shadow: none;
+}
+.button-dark:hover i::before {
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.button-dark i {
+  transition: all 0.3s;
+}
+.button-dark i::before {
+  margin-left: 5px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #313642;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 45px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.subtitle {
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 /*### Header-section ###*/
@@ -77,89 +168,120 @@ header nav .navbar-brand img {
 header nav .collapse.navbar-collapse {
   justify-content: end;
 }
+header nav .collapse.navbar-collapse ul {
+  align-items: center;
+}
 header nav .collapse.navbar-collapse ul li a {
   font-family: "Poppins", sans-serif;
   margin-right: 40px;
+  color: black !important;
 }
-header nav .collapse.navbar-collapse ul li .menu-btn {
-  border: 2px solid;
-  border-radius: 50px;
-  padding: 12px 35px;
+
+.bg-header {
+  background-image: url("../img/Banner-section-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-section .container-fluid .row .content {
+  margin-top: 75px;
+}
+.banner-section .container-fluid .row .content h1 {
+  color: #000000;
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.banner-section .container-fluid .row .content p {
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+.banner-section .container-fluid .row .image {
+  width: 630px;
+  margin: 0 auto;
+}
+.banner-section .container-fluid .row .image img {
+  border-radius: 600px 10px 10px 10px;
+}
+
+.modes-blurb .container-fluid .heading-content {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.modes-blurb .container-fluid .row {
+  width: 65%;
+  margin: 0 auto;
+}
+.modes-blurb .container-fluid .row .columns {
+  padding: 0 20px;
+}
+.modes-blurb .container-fluid .row .columns .content {
+  padding: 65px 16px;
+  border-radius: 25px;
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+}
+.modes-blurb .container-fluid .row .columns .content .img {
+  width: 75px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.modes-blurb .container-fluid .row .columns .content .body-content {
   color: white;
-  border-color: white;
+  text-align: center;
 }
-header nav .collapse.navbar-collapse ul li .menu-btn:hover {
-  background-color: white;
+.modes-blurb .container-fluid .row .columns .content .body-content h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.modes-blurb .container-fluid .row .column-1 {
+  background: #313642;
+}
+.modes-blurb .container-fluid .row .column-2 {
+  background: #805b85;
+}
+.modes-blurb .container-fluid .row .column-3 {
+  background: #edf2f4;
+}
+.modes-blurb .container-fluid .row .column-3 .body-content {
+  color: #313642 !important;
+}
+
+.why-important {
+  padding: 0;
+}
+.why-important .section-3 .row .column-1 {
+  background-color: #f6f6f6;
+  padding: 145px 80px;
+}
+.why-important .section-3 .row .column-2 {
+  background-color: #fbe2fe;
+  padding: 145px 80px;
+}
+.why-important .section-3 .row .column-2 .content .headline {
   color: #805b85;
 }
 
-/*### Header & Banner-Section ###*/
-.header-bg {
-  background-image: linear-gradient(to right, white 40%, #805b85 0%);
+.about {
+  padding: 0;
 }
-
-/*### Banner-Section ###*/
-.banner-section .container-fluid .row {
-  /*### Left-Column ###*/
-  /*### Right-Column ###*/
+.about .section-4 .row .column-1 {
+  background-color: #313642;
+  padding: 145px 80px;
 }
-.banner-section .container-fluid .row .left-column .img img {
-  width: 75%;
-  display: block;
-  margin: 0 auto;
+.about .section-4 .row .column-1 .content .headline {
+  color: #805b85;
 }
-.banner-section .container-fluid .row .right-column {
-  margin-top: 85px;
-}
-.banner-section .container-fluid .row .right-column .content h1 {
-  color: white;
-  font-family: ubuntu;
-  font-size: 44px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-.banner-section .container-fluid .row .right-column .content h4 {
-  color: white;
-  font-size: 24px;
-  font-family: "Ubuntu";
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-/*### Section-Header ###*/
-.section-header .container-fluid {
-  /*### Row ###*/
-}
-.section-header .container-fluid .row {
-  background: #805b85;
-  padding: 0px 37px 60px 37px;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 28px;
-  box-shadow: 0px 0px 21px 7px rgba(128, 91, 131, 0.631372549);
-}
-.section-header .container-fluid .row .content {
-  /*### Number ###*/
-  /*### Content ###*/
-}
-.section-header .container-fluid .row .content .number h1 {
-  font-size: 138px;
+.about .section-4 .row .column-1 .content h2 {
   color: white;
 }
-.section-header .container-fluid .row .content .headings {
-  margin-top: -100px;
-  text-align: center;
-}
-.section-header .container-fluid .row .content .headings h3 {
-  font-size: 28px;
+.about .section-4 .row .column-1 .content p {
   color: white;
-  font-weight: 400;
-  margin-top: 15px;
 }
-.section-header .container-fluid .row .content .headings h1 {
-  font-size: 72px;
-  color: white;
-  font-weight: 700;
+.about .section-4 .row .column-2 {
+  background-color: #f6f6f6;
+  padding: 145px 165px;
 }
 
 /*# sourceMappingURL=style.css.map */
