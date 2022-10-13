@@ -19,6 +19,7 @@ p {
   font-family: $body-font;
 }
 
+/*### Buttons ###*/
 .button {
   display: flex;
   width: 210px;
@@ -80,6 +81,33 @@ p {
   }
 }
 
+.bordered {
+  background: transparent;
+  color: $primary;
+  border: 1px solid $primary;
+  &:hover {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    transition: all 0.3s;
+    box-shadow: none;
+    box-shadow: 0px 0px 26px 3px #805b847d;
+    i {
+      &::before {
+        margin-left: 15px;
+        transition: all 0.3s;
+      }
+    }
+  }
+  i {
+    transition: all 0.3s;
+    &::before {
+      margin-left: 5px;
+    }
+  }
+}
+
+/*### Heading-2 ###*/
 h2 {
   font-size: 50px;
   font-weight: 700;
@@ -87,6 +115,7 @@ h2 {
   margin-bottom: 25px;
 }
 
+/*### Paragraph ###*/
 p {
   font-size: 24px;
   margin-bottom: 45px;
@@ -98,4 +127,23 @@ p {
   font-size: 21px;
   font-weight: 400;
   letter-spacing: 2px;
+  background: rgb(128 91 133 / 8%);
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  width: max-content;
+}
+
+/*### Page-Header ###*/
+.page-header {
+  .row {
+    text-align: center;
+    h1 {
+      color: #000000;
+      font-size: 60px;
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+  }
 }

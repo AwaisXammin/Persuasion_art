@@ -1,3 +1,4 @@
+/*### Header-Section-Background ###*/
 .bg-header {
   background-image: url("../img/Banner-section-img.jpg");
   background-position: center;
@@ -5,9 +6,12 @@
   background-size: cover;
 }
 
+/*### Banner-Section ###*/
 .banner-section {
   .container-fluid {
+    /*### Row ###*/
     .row {
+      /*### Column-1 ###*/
       .content {
         margin-top: 75px;
         h1 {
@@ -22,6 +26,7 @@
           margin-bottom: 45px;
         }
       }
+      /*### Column-2 ###*/
       .image {
         width: 630px;
         margin: 0 auto;
@@ -32,7 +37,9 @@
     }
   }
 }
+/*### Banner-Section-End ###*/
 
+/*### 2nd-Section ###*/
 .modes-blurb {
   .container-fluid {
     .heading-content {
@@ -41,9 +48,12 @@
       h2 {
       }
     }
+    /*### Row ###*/
     .row {
       width: 65%;
       margin: 0 auto;
+
+      /*### All Columns ###*/
       .columns {
         padding: 0 20px;
         .content {
@@ -65,12 +75,18 @@
           }
         }
       }
+
+      /*### Column-1 ###*/
       .column-1 {
         background: $secondry;
       }
+
+      /*### Column-2 ###*/
       .column-2 {
         background: $primary;
       }
+
+      /*### Column-3 ###*/
       .column-3 {
         background: #edf2f4;
         .body-content {
@@ -80,17 +96,22 @@
     }
   }
 }
+/*### 2nd-Section-End ###*/
 
+/*### Section-3 ###*/
 .why-important {
   padding: 0;
   .section-3 {
+    /*### Row ###*/
     .row {
+      /*### Column-1 ###*/
       .column-1 {
         background-color: #f6f6f6;
         padding: 145px 80px;
         .image {
         }
       }
+      /*### Column-2 ###*/
       .column-2 {
         background-color: #fbe2fe;
         padding: 145px 80px;
@@ -103,27 +124,25 @@
     }
   }
 }
+/*### Section-3-End ###*/
 
+/*### Section-4 ###*/
 .about {
   padding: 0;
   .section-4 {
+    /*### Row ###*/
     .row {
+      /*### Column-1 ###*/
       .column-1 {
-        background-color: $secondry;
+        background-color: #e4edff;
         padding: 145px 80px;
         .content {
           .headline {
-            color: $primary;
-          }
-          h2 {
-            color: $white;
-          }
-          p {
-            color: $white;
+            color: $secondry;
           }
         }
       }
-
+      /*### Column-2 ###*/
       .column-2 {
         background-color: #f6f6f6;
         padding: 145px 165px;
@@ -133,3 +152,177 @@
     }
   }
 }
+/*### Section-4-End ###*/
+
+/*### Section-5 ###*/
+.txt-img-section {
+  /*background: linear-gradient(90deg, #805b84 25%, white 0%);*/
+  .container-fluid {
+    /*### Row ###*/
+    .row {
+      /*### Column-1 ###*/
+      .img-column {
+        background-image: url("../img/B2b\ tech\ thought.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+      }
+      .image {
+        margin-top: 50px;
+      }
+      .text-column {
+        padding: 60px 60px;
+      }
+
+      /*### Column-2 ###*/
+      .columns {
+        .content {
+          h2 {
+            margin-top: 12px;
+          }
+          p {
+            margin-bottom: 10px;
+            i {
+              margin-right: 15px;
+            }
+          }
+          .requires {
+            margin-bottom: 20px;
+            p {
+              font-size: 20px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*### Section-5-End ###*/
+
+/*### Section-6 ###*/
+.what-we-do {
+  padding: 0;
+  /*### HEading ###*/
+  .header-content {
+    background: url("../img/Background-img.jpg");
+    padding: 7% 0;
+    background-size: cover;
+    background-position: center;
+    /*### Row ###*/
+    .row {
+      text-align: center;
+      width: 800px;
+      margin: 0 auto;
+      .subtitle {
+        margin: 0 auto;
+        background: #ffffff12;
+      }
+      h2 {
+        color: #fff;
+      }
+      p {
+        color: #fff;
+      }
+    }
+  }
+
+  /*### Boxes ###*/
+  .boxes-content {
+    padding-bottom: 3%;
+    /*### Row ###*/
+    .row {
+      width: 75%;
+      margin: 0 auto;
+      margin-top: -95px;
+      background: #fff;
+      padding: 50px 10px;
+      border-radius: 18px;
+      box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+      /*### Box-1 ###*/
+      .column-1 {
+        padding: 20px 46px;
+        border-right: 1px solid #00000012;
+      }
+      /*### Box-2 ###*/
+      .column-2 {
+        padding: 20px 46px;
+        border-right: 1px solid #00000012;
+      }
+      /*### Box-3 ###*/
+      .column-3 {
+        padding: 20px 46px;
+      }
+
+      /*### Main-Counter ###*/
+      .counter-content {
+        h3 {
+          font-size: 46px;
+          font-weight: 600;
+          background-image: linear-gradient(135deg, #805b86 0%, #350b45 100%);
+          background-size: 100%;
+          background-repeat: repeat;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
+/*### Section-6-End ###*/
+
+/*### Contact ###*/
+.contact {
+  .container-fluid {
+    /*### Row ###*/
+    .row {
+      /*### Contact-form ###*/
+      .contact-form {
+        width: 65%;
+        margin: 0 auto;
+        .container {
+          padding: 16px;
+          background-color: white;
+          hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+          }
+          /* Full-width input fields */
+          input[type="text"],
+          input[type="password"],
+          input[type="tel"],
+          textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1 !important;
+          }
+
+          input[type="text"]:focus,
+          input[type="password"]:focus,
+          input[type="tel"]:focus,
+          textarea {
+            background-color: #ddd;
+            outline: none;
+          }
+
+          .titles {
+            text-align: center;
+            p {
+              margin-bottom: 0;
+            }
+          }
+          .button {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*### Contact-End ###*/

@@ -1,0 +1,68 @@
+/*### Footer ###*/
+footer {
+  background: url("../img/wave-divider-footer.png");
+  padding-top: 12%;
+  background-size: cover;
+  .container-fluid {
+    .footer-data {
+      padding-top: 45px;
+      /*### Row ###*/
+      .row {
+        /*### All Columns ###*/
+        .content {
+          h4 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 0px;
+            a {
+              &:hover {
+                color: $white;
+              }
+            }
+          }
+          .social-media {
+            font-size: 18px;
+            color: #fff;
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    /*### Bottom-Bar ###*/
+    .bottom-footer {
+      .copyright {
+        /*### Row ###*/
+        .row {
+          border-top: 1px solid #fff3;
+          padding-top: 30px;
+          margin-top: 45px;
+          p {
+            font-size: 16px;
+            color: #fff;
+          }
+          .column-right {
+            p {
+              text-align: right;
+              a {
+                &:hover {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*### Footer-End ###*/
