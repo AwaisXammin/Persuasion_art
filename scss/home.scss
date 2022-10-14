@@ -30,6 +30,9 @@
       .image {
         width: 630px;
         margin: 0 auto;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
         img {
           border-radius: 600px 10px 10px 10px;
         }
@@ -52,10 +55,16 @@
     .row {
       width: 65%;
       margin: 0 auto;
+      @media (max-width: 1399px) {
+        width: 100%;
+      }
 
       /*### All Columns ###*/
       .columns {
         padding: 0 20px;
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+        }
         .content {
           padding: 65px 16px;
           border-radius: 25px;
@@ -108,6 +117,9 @@
       .column-1 {
         background-color: #f6f6f6;
         padding: 145px 80px;
+        @media (max-width: 767px) {
+          padding: 94px 60px;
+        }
         .image {
         }
       }
@@ -115,6 +127,9 @@
       .column-2 {
         background-color: #fbe2fe;
         padding: 145px 80px;
+        @media (max-width: 767px) {
+          padding: 94px 60px;
+        }
         .content {
           .headline {
             color: $primary;
@@ -136,6 +151,9 @@
       .column-1 {
         background-color: #e4edff;
         padding: 145px 80px;
+        @media (max-width: 767px) {
+          padding: 94px 60px;
+        }
         .content {
           .headline {
             color: $secondry;
@@ -146,6 +164,9 @@
       .column-2 {
         background-color: #f6f6f6;
         padding: 145px 165px;
+        @media (max-width: 767px) {
+          padding: 94px 60px;
+        }
         .image {
         }
       }
@@ -166,12 +187,18 @@
         background-size: cover;
         background-position: center;
         box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+        @media (max-width: 767px) {
+          padding: 200px 0;
+        }
       }
       .image {
         margin-top: 50px;
       }
       .text-column {
         padding: 60px 60px;
+        @media (max-width: 767px) {
+          padding: 54px 20px;
+        }
       }
 
       /*### Column-2 ###*/
@@ -214,6 +241,10 @@
       text-align: center;
       width: 800px;
       margin: 0 auto;
+      @media (max-width: 767px) {
+        width: 80%;
+        margin: 40px auto;
+      }
       .subtitle {
         margin: 0 auto;
         background: #ffffff12;
@@ -243,15 +274,26 @@
       .column-1 {
         padding: 20px 46px;
         border-right: 1px solid #00000012;
+        @media (max-width: 767px) {
+          padding: 17px 25px;
+          border-right: 0px;
+        }
       }
       /*### Box-2 ###*/
       .column-2 {
         padding: 20px 46px;
         border-right: 1px solid #00000012;
+        @media (max-width: 767px) {
+          padding: 17px 25px;
+          border-right: 0px;
+        }
       }
       /*### Box-3 ###*/
       .column-3 {
         padding: 20px 46px;
+        @media (max-width: 767px) {
+          padding: 17px 25px;
+        }
       }
 
       /*### Main-Counter ###*/
@@ -282,6 +324,9 @@
       .contact-form {
         width: 65%;
         margin: 0 auto;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
         .container {
           padding: 16px;
           background-color: white;

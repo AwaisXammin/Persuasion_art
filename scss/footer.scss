@@ -10,6 +10,9 @@ footer {
       .row {
         /*### All Columns ###*/
         .content {
+          @media (max-width: 767px) {
+            margin-bottom: 30px;
+          }
           h4 {
             font-size: 30px;
             font-weight: 600;
@@ -45,13 +48,22 @@ footer {
           border-top: 1px solid #fff3;
           padding-top: 30px;
           margin-top: 45px;
+          @media (max-width: 767px) {
+            padding-bottom: 30px;
+          }
           p {
             font-size: 16px;
             color: #fff;
+            @media (max-width: 767px) {
+              margin-bottom: 5px;
+            }
           }
           .column-right {
             p {
               text-align: right;
+              @media (max-width: 767px) {
+                text-align: left;
+              }
               a {
                 &:hover {
                   color: $white;

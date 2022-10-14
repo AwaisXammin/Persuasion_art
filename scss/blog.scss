@@ -5,9 +5,15 @@
     .row {
       width: 80%;
       margin: 0 auto;
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
       .post-grid {
         box-shadow: 0px 0px 12px 1px #00000017;
         transition: all 0.4s;
+        @media (max-width: 767px) {
+          margin-bottom: 40px;
+        }
         &:hover {
           box-shadow: 0px 0px 12px 1px rgb(0 0 0 / 31%);
         }

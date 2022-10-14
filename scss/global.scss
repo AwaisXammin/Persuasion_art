@@ -147,3 +147,21 @@ p {
     }
   }
 }
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 45px !important;
+  }
+  h2 {
+    font-size: 36px !important;
+  }
+  p {
+    font-size: 20px !important;
+  }
+}
+
+img {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
