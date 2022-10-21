@@ -136,10 +136,14 @@ p {
 
 /*### Page-Header ###*/
 .page-header {
+  background: url("../img/Background-img.jpg");
+  background-size: cover;
+  background-position: right;
+  color: #fff;
   .row {
     text-align: center;
     h1 {
-      color: #000000;
+      color: #fff;
       font-size: 60px;
       line-height: 1.1;
       font-weight: 700;

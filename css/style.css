@@ -186,11 +186,17 @@ p {
 }
 
 /*### Page-Header ###*/
+.page-header {
+  background: url("../img/Background-img.jpg");
+  background-size: cover;
+  background-position: right;
+  color: #fff;
+}
 .page-header .row {
   text-align: center;
 }
 .page-header .row h1 {
-  color: #000000;
+  color: #fff;
   font-size: 60px;
   line-height: 1.1;
   font-weight: 700;
@@ -277,10 +283,6 @@ header nav .collapse.navbar-collapse ul li a {
     width: 100%;
   }
 }
-.banner-section .container-fluid .row .image img {
-  border-radius: 600px 10px 10px 10px;
-}
-
 /*### Banner-Section-End ###*/
 /*### 2nd-Section ###*/
 .modes-blurb .container-fluid {
@@ -313,7 +315,9 @@ header nav .collapse.navbar-collapse ul li a {
 }
 .modes-blurb .container-fluid .row .columns .content {
   padding: 65px 16px;
-  border-radius: 25px;
+  border-radius: 154px;
+  width: 300px;
+  height: 300px;
   box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
 }
 .modes-blurb .container-fluid .row .columns .content .img {
@@ -377,90 +381,6 @@ header nav .collapse.navbar-collapse ul li a {
 }
 
 /*### Section-3-End ###*/
-/*### Section-4 ###*/
-.about {
-  padding: 0;
-}
-.about .section-4 {
-  /*### Row ###*/
-}
-.about .section-4 .row {
-  /*### Column-1 ###*/
-  /*### Column-2 ###*/
-}
-.about .section-4 .row .column-1 {
-  background-color: #e4edff;
-  padding: 145px 80px;
-}
-@media (max-width: 767px) {
-  .about .section-4 .row .column-1 {
-    padding: 94px 60px;
-  }
-}
-.about .section-4 .row .column-1 .content .headline {
-  color: #313642;
-}
-.about .section-4 .row .column-2 {
-  background-color: #f6f6f6;
-  padding: 145px 165px;
-}
-@media (max-width: 767px) {
-  .about .section-4 .row .column-2 {
-    padding: 94px 60px;
-  }
-}
-/*### Section-4-End ###*/
-/*### Section-5 ###*/
-.txt-img-section {
-  /*background: linear-gradient(90deg, #805b84 25%, white 0%);*/
-}
-.txt-img-section .container-fluid {
-  /*### Row ###*/
-}
-.txt-img-section .container-fluid .row {
-  /*### Column-1 ###*/
-  /*### Column-2 ###*/
-}
-.txt-img-section .container-fluid .row .img-column {
-  background-image: url("../img/B2b tech thought.jpg");
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
-}
-@media (max-width: 767px) {
-  .txt-img-section .container-fluid .row .img-column {
-    padding: 200px 0;
-  }
-}
-.txt-img-section .container-fluid .row .image {
-  margin-top: 50px;
-}
-.txt-img-section .container-fluid .row .text-column {
-  padding: 60px 60px;
-}
-@media (max-width: 767px) {
-  .txt-img-section .container-fluid .row .text-column {
-    padding: 54px 20px;
-  }
-}
-.txt-img-section .container-fluid .row .columns .content h2 {
-  margin-top: 12px;
-}
-.txt-img-section .container-fluid .row .columns .content p {
-  margin-bottom: 10px;
-}
-.txt-img-section .container-fluid .row .columns .content p i {
-  margin-right: 15px;
-}
-.txt-img-section .container-fluid .row .columns .content .requires {
-  margin-bottom: 20px;
-}
-.txt-img-section .container-fluid .row .columns .content .requires p {
-  font-size: 20px;
-  margin-bottom: 0;
-}
-
-/*### Section-5-End ###*/
 /*### Section-6 ###*/
 .what-we-do {
   padding: 0;
@@ -553,6 +473,96 @@ header nav .collapse.navbar-collapse ul li a {
 }
 
 /*### Section-6-End ###*/
+/*### Section-4 ###*/
+.about {
+  padding: 0;
+}
+.about .section-4 {
+  /*### Row ###*/
+}
+.about .section-4 .row {
+  /*### Column-1 ###*/
+  /*### Column-2 ###*/
+}
+.about .section-4 .row .column-1 {
+  background-color: #e4edff;
+  padding: 145px 80px;
+}
+@media (max-width: 767px) {
+  .about .section-4 .row .column-1 {
+    padding: 94px 60px;
+  }
+}
+.about .section-4 .row .column-1 .content .headline {
+  color: #313642;
+}
+.about .section-4 .row .column-1 .content p {
+  margin-bottom: 15px;
+}
+.about .section-4 .row .column-2 {
+  background-color: #f6f6f6;
+  padding: 145px 165px;
+}
+@media (max-width: 767px) {
+  .about .section-4 .row .column-2 {
+    padding: 94px 60px;
+  }
+}
+/*### Section-4-End ###*/
+/*### Section-5 ###*/
+.txt-img-section {
+  /*background: linear-gradient(90deg, #805b84 25%, white 0%);*/
+}
+.txt-img-section:nth-child(odd) .row {
+  flex-direction: row-reverse;
+}
+.txt-img-section .container-fluid {
+  /*### Row ###*/
+}
+.txt-img-section .container-fluid .row {
+  /*### Column-1 ###*/
+  /*### Column-2 ###*/
+}
+.txt-img-section .container-fluid .row .img-column {
+  background-image: url("../img/B2b tech thought.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .txt-img-section .container-fluid .row .img-column {
+    padding: 200px 0;
+  }
+}
+.txt-img-section .container-fluid .row .image {
+  margin-top: 50px;
+}
+.txt-img-section .container-fluid .row .text-column {
+  padding: 60px 60px;
+}
+@media (max-width: 767px) {
+  .txt-img-section .container-fluid .row .text-column {
+    padding: 54px 20px;
+  }
+}
+.txt-img-section .container-fluid .row .columns .content h2 {
+  margin-top: 12px;
+}
+.txt-img-section .container-fluid .row .columns .content p {
+  margin-bottom: 10px;
+}
+.txt-img-section .container-fluid .row .columns .content p i {
+  margin-right: 15px;
+}
+.txt-img-section .container-fluid .row .columns .content .requires {
+  margin-bottom: 20px;
+}
+.txt-img-section .container-fluid .row .columns .content .requires p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/*### Section-5-End ###*/
 /*### Contact ###*/
 .contact .container-fluid {
   /*### Row ###*/
@@ -730,6 +740,49 @@ header nav .collapse.navbar-collapse ul li a {
 }
 
 /*### Blog-End ###*/
+.blog-page .container-fluid .post-row {
+  width: 85%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.0196078431);
+  padding: 65px;
+}
+@media (max-width: 991px) {
+  .blog-page .container-fluid .post-row {
+    padding: 35px;
+    width: 100%;
+  }
+}
+.blog-page .container-fluid .post-row .post-content .image {
+  margin-bottom: 25px;
+}
+.blog-page .container-fluid .post-row .post-content .image img {
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+}
+.blog-page .container-fluid .post-row .post-content .body {
+  padding: 19px 29px;
+}
+@media (max-width: 991px) {
+  .blog-page .container-fluid .post-row .post-content .body {
+    padding: 19px 0px;
+  }
+}
+.blog-page .container-fluid .post-row .post-content .body p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.blog-page .container-fluid .post-row .post-content .body .buttons .row {
+  width: 250px;
+  margin-top: 22px;
+}
+.blog-page .container-fluid .post-row .post-content .body .buttons .row a {
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.blog-page .container-fluid .post-row .post-content .body .buttons .row a:hover {
+  color: black;
+  opacity: 0.5;
+}
+
 /*### Footer ###*/
 footer {
   background: url("../img/wave-divider-footer.png");

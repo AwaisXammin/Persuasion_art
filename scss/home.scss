@@ -34,7 +34,6 @@
           width: 100%;
         }
         img {
-          border-radius: 600px 10px 10px 10px;
         }
       }
     }
@@ -67,7 +66,9 @@
         }
         .content {
           padding: 65px 16px;
-          border-radius: 25px;
+          border-radius: 154px;
+          width: 300px;
+          height: 300px;
           box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
           .img {
             width: 75px;
@@ -140,92 +141,6 @@
   }
 }
 /*### Section-3-End ###*/
-
-/*### Section-4 ###*/
-.about {
-  padding: 0;
-  .section-4 {
-    /*### Row ###*/
-    .row {
-      /*### Column-1 ###*/
-      .column-1 {
-        background-color: #e4edff;
-        padding: 145px 80px;
-        @media (max-width: 767px) {
-          padding: 94px 60px;
-        }
-        .content {
-          .headline {
-            color: $secondry;
-          }
-        }
-      }
-      /*### Column-2 ###*/
-      .column-2 {
-        background-color: #f6f6f6;
-        padding: 145px 165px;
-        @media (max-width: 767px) {
-          padding: 94px 60px;
-        }
-        .image {
-        }
-      }
-    }
-  }
-}
-/*### Section-4-End ###*/
-
-/*### Section-5 ###*/
-.txt-img-section {
-  /*background: linear-gradient(90deg, #805b84 25%, white 0%);*/
-  .container-fluid {
-    /*### Row ###*/
-    .row {
-      /*### Column-1 ###*/
-      .img-column {
-        background-image: url("../img/B2b\ tech\ thought.jpg");
-        background-size: cover;
-        background-position: center;
-        box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
-        @media (max-width: 767px) {
-          padding: 200px 0;
-        }
-      }
-      .image {
-        margin-top: 50px;
-      }
-      .text-column {
-        padding: 60px 60px;
-        @media (max-width: 767px) {
-          padding: 54px 20px;
-        }
-      }
-
-      /*### Column-2 ###*/
-      .columns {
-        .content {
-          h2 {
-            margin-top: 12px;
-          }
-          p {
-            margin-bottom: 10px;
-            i {
-              margin-right: 15px;
-            }
-          }
-          .requires {
-            margin-bottom: 20px;
-            p {
-              font-size: 20px;
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-/*### Section-5-End ###*/
 
 /*### Section-6 ###*/
 .what-we-do {
@@ -314,6 +229,100 @@
   }
 }
 /*### Section-6-End ###*/
+
+/*### Section-4 ###*/
+.about {
+  padding: 0;
+  .section-4 {
+    /*### Row ###*/
+    .row {
+      /*### Column-1 ###*/
+      .column-1 {
+        background-color: #e4edff;
+        padding: 145px 80px;
+        @media (max-width: 767px) {
+          padding: 94px 60px;
+        }
+        .content {
+          .headline {
+            color: $secondry;
+          }
+          p {
+            margin-bottom: 15px;
+          }
+        }
+      }
+      /*### Column-2 ###*/
+      .column-2 {
+        background-color: #f6f6f6;
+        padding: 145px 165px;
+        @media (max-width: 767px) {
+          padding: 94px 60px;
+        }
+        .image {
+        }
+      }
+    }
+  }
+}
+/*### Section-4-End ###*/
+
+/*### Section-5 ###*/
+.txt-img-section {
+  /*background: linear-gradient(90deg, #805b84 25%, white 0%);*/
+  &:nth-child(odd) {
+    .row {
+      flex-direction: row-reverse;
+    }
+  }
+  .container-fluid {
+    /*### Row ###*/
+    .row {
+      /*### Column-1 ###*/
+      .img-column {
+        background-image: url("../img/B2b\ tech\ thought.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+        @media (max-width: 767px) {
+          padding: 200px 0;
+        }
+      }
+      .image {
+        margin-top: 50px;
+      }
+      .text-column {
+        padding: 60px 60px;
+        @media (max-width: 767px) {
+          padding: 54px 20px;
+        }
+      }
+
+      /*### Column-2 ###*/
+      .columns {
+        .content {
+          h2 {
+            margin-top: 12px;
+          }
+          p {
+            margin-bottom: 10px;
+            i {
+              margin-right: 15px;
+            }
+          }
+          .requires {
+            margin-bottom: 20px;
+            p {
+              font-size: 20px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*### Section-5-End ###*/
 
 /*### Contact ###*/
 .contact {

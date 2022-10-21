@@ -84,8 +84,8 @@
         <div class="container-fluid">
           <!--### Row ###-->
           <div class="row">
-            <h1>Blog</h1>
-            <p>Home / Blog</p>
+            <h1>Software as a Service (SaaS): A cheat sheet</h1>
+            <p>Home / Software as a Service (SaaS): A cheat sheet</p>
           </div>
         </div>
       </section>
@@ -93,66 +93,40 @@
     <!--### Page-Header-End ###-->
 
     <!--### Blog ###-->
-    <section class="blog-posts">
+    <section class="blog-page">
       <div class="container-fluid">
         <!--### Row ###-->
-        <div class="row">
-          <!--### Post-1 ###-->
-          <div class="col-md-4 col-sm-4 col-12">
-            <div class="post-grid">
-              <div class="image">
-                <img src="img/post-1.jpg" alt="Post-1-img" />
-              </div>
-              <div class="content">
-                <p class="publish-date">April 24, 2022</p>
-                <a href="#"
-                  ><h3>Software as a Service (SaaS): A cheat sheet</h3></a
-                >
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium...
-                </p>
-                <a href="#" class="read-more-btn">Read More</a>
-              </div>
+        <div class="post-row">
+          <div class="post-content">
+            <div class="image">
+              <img src="img/post-1.jpg" alt="Post-1-img" />
             </div>
-          </div>
-
-          <!--### Post-2 ###-->
-          <div class="col-md-4 col-sm-4 col-12">
-            <div class="post-grid">
-              <div class="image">
-                <img src="img/post-2.jpg" alt="Post-2-img" />
-              </div>
-              <div class="content">
-                <p class="publish-date">April 15, 2022</p>
-                <a href="#"
-                  ><h3>Scale up vs Scale out: What’s the difference?</h3></a
-                >
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium...
-                </p>
-                <a href="#" class="read-more-btn">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <!--### Post-3 ###-->
-          <div class="col-md-4 col-sm-4 col-12">
-            <div class="post-grid">
-              <div class="image">
-                <img src="img/post-3.jpg" alt="Post-3-img" />
-              </div>
-              <div class="content">
-                <p class="publish-date">March 7, 2022</p>
-                <a href="#"
-                  ><h3>WordPress Website Audit by a Website Maintenance</h3></a
-                >
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium...
-                </p>
-                <a href="#" class="read-more-btn">Read More</a>
+            <div class="body">
+              <p class="publish-date">April 15, 2022</p>
+              <h2>Software as a Service (SaaS): A cheat sheet</h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minima veniam.
+              </p>
+              <div class="buttons">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12 col-12">
+                    <a href="#"
+                      ><i class="fa-solid fa-chevron-left"></i> Previous</a
+                    >
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-12">
+                    <a href="#">Next <i class="fa-solid fa-angle-right"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -160,68 +134,6 @@
       </div>
     </section>
     <!--### Blog-End ###-->
-
-    <!--### Contact ###-->
-    <section class="contact" id="contact">
-      <div class="container-fluid">
-        <!--### Row ###-->
-        <div class="row">
-          <!--### Contact-Form ###-->
-          <div class="contact-form">
-            <form action="/action_page.php">
-              <div class="container">
-                <div class="titles">
-                  <h2>Get In Touch</h2>
-                  <p>Want to learn more about B2B Tech Thought Leadership?</p>
-                </div>
-
-                <hr />
-
-                <label for="name"><b>Name</b></label>
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  name="name"
-                  id="name"
-                  required
-                />
-
-                <label for="email"><b>Email</b></label>
-                <input
-                  type="text"
-                  placeholder="Email Address"
-                  name="email"
-                  id="email"
-                  required
-                />
-
-                <label for="phone"><b>Phone</b></label>
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
-                  name="phone"
-                  id="phone"
-                  required
-                />
-
-                <label for="subject"><b>Message</b></label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Enter Your Message"
-                  style="height: 200px"
-                ></textarea>
-
-                <button type="submit" class="button-dark button">
-                  Register <i class="fa-solid fa-chevron-right"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--### Contact-End ###-->
 
     <!--### Footer ###-->
     <footer>
@@ -278,7 +190,9 @@
               <div class="content">
                 <h4>Follow Us</h4>
                 <div class="social-media">
+                  <i class="fa-brands fa-facebook-f"></i>
                   <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
                   <i class="fa-brands fa-linkedin-in"></i>
                 </div>
               </div>
