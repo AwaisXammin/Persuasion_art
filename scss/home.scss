@@ -52,7 +52,7 @@
     }
     /*### Row ###*/
     .row {
-      width: 65%;
+      width: 760px;
       margin: 0 auto;
       @media (max-width: 1399px) {
         width: 100%;
@@ -249,6 +249,11 @@
           }
           p {
             margin-bottom: 15px;
+          }
+          .icon-text {
+            p {
+              font-size: 20px;
+            }
           }
         }
       }

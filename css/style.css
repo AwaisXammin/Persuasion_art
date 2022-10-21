@@ -293,7 +293,7 @@ header nav .collapse.navbar-collapse ul li a {
   margin-bottom: 55px;
 }
 .modes-blurb .container-fluid .row {
-  width: 65%;
+  width: 760px;
   margin: 0 auto;
   /*### All Columns ###*/
   /*### Column-1 ###*/
@@ -498,6 +498,9 @@ header nav .collapse.navbar-collapse ul li a {
 }
 .about .section-4 .row .column-1 .content p {
   margin-bottom: 15px;
+}
+.about .section-4 .row .column-1 .content .icon-text p {
+  font-size: 20px;
 }
 .about .section-4 .row .column-2 {
   background-color: #f6f6f6;
