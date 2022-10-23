@@ -57,12 +57,23 @@
       @media (max-width: 1399px) {
         width: 100%;
       }
+      @media (max-width: 861px) {
+        justify-content: center;
+      }
+      @media (max-width: 687px) {
+        flex-direction: column;
+        width: fit-content;
+      }
 
       /*### All Columns ###*/
       .columns {
         padding: 0 20px;
         @media (max-width: 767px) {
           margin-bottom: 20px;
+        }
+
+        @media (max-width: 861px) {
+          width: 50%;
         }
         .content {
           padding: 65px 16px;

@@ -305,12 +305,28 @@ header nav .collapse.navbar-collapse ul li a {
     width: 100%;
   }
 }
+@media (max-width: 861px) {
+  .modes-blurb .container-fluid .row {
+    justify-content: center;
+  }
+}
+@media (max-width: 687px) {
+  .modes-blurb .container-fluid .row {
+    flex-direction: column;
+    width: fit-content;
+  }
+}
 .modes-blurb .container-fluid .row .columns {
   padding: 0 20px;
 }
 @media (max-width: 767px) {
   .modes-blurb .container-fluid .row .columns {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 861px) {
+  .modes-blurb .container-fluid .row .columns {
+    width: 50%;
   }
 }
 .modes-blurb .container-fluid .row .columns .content {
