@@ -1,5 +1,10 @@
 /*### Img-Text-Section ###*/
 .txt-img-section {
+  &:nth-child(even) {
+    .row {
+      flex-direction: row-reverse;
+    }
+  }
   .container-fluid {
     /*### Row ###*/
     .row {
@@ -9,6 +14,13 @@
           font-weight: 800;
           color: #00000017;
           margin-bottom: -20px;
+        }
+        .inner-content {
+          font-size: 18px;
+          padding-left: 35px;
+          i {
+            font-size: 15px;
+          }
         }
       }
     }
