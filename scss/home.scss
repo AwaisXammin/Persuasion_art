@@ -64,6 +64,9 @@
         flex-direction: column;
         width: fit-content;
       }
+      @media (min-width: 862px) {
+        margin-top: 225px;
+      }
 
       /*### All Columns ###*/
       .columns {
@@ -100,16 +103,27 @@
       /*### Column-1 ###*/
       .column-1 {
         background: $secondry;
+        @media (min-width: 862px) {
+          margin-left: 115px;
+        }
       }
 
       /*### Column-2 ###*/
       .column-2 {
         background: $primary;
+        @media (min-width: 862px) {
+          margin-top: -190px;
+          z-index: 55;
+          position: relative;
+        }
       }
 
       /*### Column-3 ###*/
       .column-3 {
         background: #edf2f4;
+        @media (min-width: 862px) {
+          margin-left: -115px;
+        }
         .body-content {
           color: $secondry !important;
         }
@@ -145,6 +159,16 @@
         .content {
           .headline {
             color: $primary;
+          }
+          .counter-content {
+            background: #fff;
+            padding: 31px 50px;
+            border-radius: 18px;
+            box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+            margin-bottom: 30px;
+            p {
+              margin-bottom: 0;
+            }
           }
         }
       }
